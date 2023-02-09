@@ -124,10 +124,10 @@
   background-color: rgb(112, 173, 199);
 }
 
-.dragcomplete {
-  background-color: rgb(255, 38, 0);
-}
-
 .remove {
   background-color: rgb(228, 134, 117);
+}
+
+.dragcomplete {
+  background-color: rgb(174, 69, 51);
 }
