@@ -1,0 +1,133 @@
+
+/* input */
+.input {
+  display: flex;
+  width: 95%;
+  position: relative;
+  align-items: center;
+}
+
+.input__box {
+  width: 100%;
+  border-radius: 50px;
+  padding: 20px 30px;
+  font-size: 25px;
+  border: none;
+  transition: 0.2s;
+  box-shadow: inset 0 0 5px black;
+}
+/* makes darker the bg*/
+.input__box:focus {
+  box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+/* for button go */
+.input__submit {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: 12px;
+  border-radius: 50px;
+  right: 0px;
+  border: none;
+  font-size: 15px;
+  background-color: #2f74c0;
+  color: white;
+  transition: 0.2s all;
+  box-shadow: 0 0 10px black;
+}
+/* animation for button go*/
+.input__submit:hover {
+  background-color: #388ae2;
+}
+
+.input_submit:active {
+  transform: scale(0.8);
+  box-shadow: 0 0 5px black;
+}
+.container {
+  width: 95%;
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.todos {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 47.5%;
+  padding: 15px;
+  background-color: rgb(161, 197, 233);
+}
+
+
+.todos__heading {
+  font-size: 30px;
+  /* text-align: center; */
+  color: white;
+}
+ 
+.todos__single {
+  display: flex;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 15px;
+  background-image: url("https://img.freepik.com/free-photo/paper-textured-background_53876-30486.jpg?w=996&t=st=1675785922~exp=1675786522~hmac=699838595ed4aae742e1232140abdb8e53ea5ba7bb0227ccab63e53a4bdf88fe");
+  transition: 0.2s;
+}
+
+.drag {
+  box-shadow: 0 0 20px black;
+} 
+
+.todos__single:hover {
+  box-shadow: 0 0 5px black;
+  transform: scale(1.03);
+}
+.todos__single--text {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  font-size: 20px;
+}
+.todos__single--text:focus {
+  outline: none;
+}
+.icon {
+  margin-left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .todos {
+    width: 45%;
+  }
+}
+
+@media (max-width: 700px) {
+  .input {
+    width: 95%;
+  }
+  .container {
+    width: 95%;
+    flex-direction: column;
+  }
+  .todos {
+    width: 95%;
+    margin-bottom: 10px;
+  }
+}
+.dragactive {
+  background-color: rgb(112, 173, 199);
+}
+
+.dragcomplete {
+  background-color: rgb(255, 38, 0);
+}
+
+.remove {
+  background-color: rgb(228, 134, 117);
+}
